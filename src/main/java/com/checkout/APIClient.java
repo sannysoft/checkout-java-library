@@ -13,6 +13,7 @@ import com.checkout.helpers.Environment;
 
 import java.io.IOException;
 
+@SuppressWarnings("ALL")
 public class APIClient {
 
     public TokenService tokenService;
@@ -37,19 +38,19 @@ public class APIClient {
         AppSettings.readTimeout = readTimeout;
     }
 
-    private APIClient(String secretKey, Environment env, boolean debugMode) throws IOException {
+    public APIClient(String secretKey, Environment env, boolean debugMode) throws IOException {
         this(secretKey, env);
 
         AppSettings.debugMode = debugMode;
     }
 
-    private APIClient(String secretKey, String publicKey, Environment env, boolean debugMode) throws IOException {
+    public APIClient(String secretKey, String publicKey, Environment env, boolean debugMode) throws IOException {
         this(secretKey, publicKey, env);
 
         AppSettings.debugMode = debugMode;
     }
 
-    private APIClient(String secretKey, Environment env) throws IOException {
+    public APIClient(String secretKey, Environment env) throws IOException {
         AppSettings.secretKey = secretKey;
 
         AppSettings.SetEnvironment(env);
@@ -57,7 +58,7 @@ public class APIClient {
         SetupServices();
     }
 
-    private APIClient(String secretKey, String publicKey, Environment env) throws IOException {
+    public APIClient(String secretKey, String publicKey, Environment env) throws IOException {
         AppSettings.secretKey = secretKey;
         AppSettings.publicKey = publicKey;
 

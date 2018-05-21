@@ -1,10 +1,17 @@
+### Important
+
+That's Checkout.com Java library fork that can be downloaded with Gradle/Maven
+
 ### Requirements
 
-Java 1.7 and later
+Java 1.8 and later
 
 ### How to use the library
 
-Add the latest **checkout-java-v{version number}.jar** file to your class path. . The latest JAR file for Checkout library resides in the **releases\latest\** folder of the project.
+Gradle
+Add maven { url "https://jitpack.io" } to repositories { block
+Add library to dependencies:
+compile("com.github.sannysoft:checkout-java-library:-SNAPSHOT")
 
 ### Example
 

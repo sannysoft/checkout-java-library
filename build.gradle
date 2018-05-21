@@ -1,0 +1,26 @@
+
+plugins {
+    id 'java-library'
+}
+
+version = '1.0.0'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    implementation 'net.sf.ezmorph:ezmorph:1.0.6'
+    implementation 'com.google.code.gson:gson:2.8.4'
+    //compile 'net.sf.json-lib:json-lib:2.4'
+
+    // Use JUnit test framework
+    testImplementation 'junit:junit:4.12'
+}
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                'Implementation-Version': project.version)
+    }
+}

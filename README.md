@@ -8,10 +8,7 @@ Java 1.8 and later
 
 ### How to use the library
 
-Gradle
-Add maven { url "https://jitpack.io" } to repositories { block
-Add library to dependencies:
-compile("com.github.sannysoft:checkout-java-library:-SNAPSHOT")
+Read at https://jitpack.io/#sannysoft/checkout-java-library
 
 ### Example
 

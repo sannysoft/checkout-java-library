@@ -36,9 +36,6 @@ public class BaseCharge extends BaseChargeInfo {
     public Address shippingDetails;
     public Address billingDetails;
 
-    public String successUrl;
-    public String failUrl;
-
     public BillingDescriptor descriptor;
 
     public boolean attemptN3D;

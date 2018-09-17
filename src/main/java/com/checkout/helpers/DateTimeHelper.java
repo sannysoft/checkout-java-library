@@ -15,4 +15,11 @@ public class DateTimeHelper {
         f.setTimeZone(TimeZone.getTimeZone("UTC"));
         return f.format(date);
     }
+
+    public static String FormatAsUtcDate(Date date) {
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        f.setTimeZone(TimeZone.getTimeZone("UTC"));
+        return f.format(date);
+    }
+
 }

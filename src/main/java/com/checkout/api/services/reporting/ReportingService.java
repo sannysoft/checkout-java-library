@@ -24,8 +24,8 @@ public class ReportingService extends BaseService {
     public Response<StatementTransactionList> queryStatementTransactions(StatementTransactionsQuery requestModel) throws IOException, JsonSyntaxException {
         String apiUrl = String.format(
                 ApiUrls.REPORTING_STATEMENT_TRANSACTIONS,
-                DateTimeHelper.FormatAsUtc(requestModel.startDate),
-                DateTimeHelper.FormatAsUtc(requestModel.endDate)
+                DateTimeHelper.FormatAsUtcDate(requestModel.startDate),
+                DateTimeHelper.FormatAsUtcDate(requestModel.endDate)
         );
         return httpClient.getRequest(apiUrl, AppSettings.secretKey, StatementTransactionList.class);
     }

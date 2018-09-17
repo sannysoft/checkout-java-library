@@ -3,7 +3,7 @@ plugins {
     id 'java-library'
 }
 
-version = '1.0.0'
+version = '1.0.3'
 
 repositories {
     jcenter()
@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     implementation 'net.sf.ezmorph:ezmorph:1.0.6'
-    implementation 'com.google.code.gson:gson:2.8.4'
+    implementation 'com.google.code.gson:gson:2.8.5'
     //compile 'net.sf.json-lib:json-lib:2.4'
 
     // Use JUnit test framework

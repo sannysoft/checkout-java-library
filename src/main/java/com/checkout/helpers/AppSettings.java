@@ -1,8 +1,8 @@
 package com.checkout.helpers;
 
 public class AppSettings {
-    public static String secretKey;//"sk_test_32b9cb39-1cd6-4f86-b750-7069a133667d"
-    public static String publicKey;//"pk_test_2997d616-471e-48a5-ba86-c775ed3ac38a"
+    public static String secretKey;//"sk_test_32b9cb39-1cd6-4f86-b750-7069a133657d"
+    public static String publicKey;//"pk_test_2997d616-471e-48a5-ba86-c775ed3ag38a"
     public static boolean debugMode = false;
     public static int connectTimeout = 60;
     public static int readTimeout = 60;

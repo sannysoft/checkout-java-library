@@ -5,7 +5,7 @@ public class AppSettings {
     public static String publicKey;//"pk_test_2997d616-471e-48a5-ba86-c775ed3ag38a"
     public static boolean debugMode = false;
     public static int connectTimeout = 60;
-    public static int readTimeout = 60;
+    public static int readTimeout = 100;
     static String baseApiUrl = "";
     private static double clientVersion = 1.0;
     public static String clientUserAgentName = String.format("Checkout-JavaLibraryClient/%s", clientVersion);

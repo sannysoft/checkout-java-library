@@ -24,7 +24,7 @@ public class ApiUrls {
     public static final String VOID_CHARGE = String.format(AppSettings.baseApiUrl, "charges/%s/void");
     public static final String CHARGE_HISTORY = String.format(AppSettings.baseApiUrl, "charges/%s/history");
 
-    public static final String REPORTING_STATEMENT_TRANSACTIONS = "https://api.checkout.com/reconciliation/transactions?start-date=%s&end-date=%s";
+    public static final String REPORTING_STATEMENT_TRANSACTIONS = "https://api.checkout.com/reconciliation/transactions?from=%s&to=%s";
     public static final String REPORTING_TRANSACTIONS = String.format(AppSettings.baseApiUrl, "reporting/transactions");
     public static final String REPORTING_CHARGEBACKS = String.format(AppSettings.baseApiUrl, "reporting/chargebacks");
 
